@@ -18,7 +18,7 @@ def get_temp(date):
 
     for data in weather_data['list']:
         if date in data['dt_txt']:
-            print(f"Temperature on {date}: {data['main']['temp']}°C")
+            print("Temperature on {date}: {data['main']['temp']}°C")
             return
     print("Data not available for the specified date.")
 
